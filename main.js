@@ -20,7 +20,12 @@ function createDatabase() {
     CREATE TABLE IF NOT EXISTS todos (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
      texte TEXT,
-     done INTEGER DEFAULT 0
+     done INTEGER DEFAULT 0,
+     date_echeance TEXT,
+     priorite TEXT,
+     description TEXT,
+     important INTEGER DEFAULT 0,
+     date_creation TEXT
     )
   `);
   console.log("DB utilisée :", dbPath);
