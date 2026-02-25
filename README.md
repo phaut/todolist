@@ -39,4 +39,5 @@ mon-app-desktop/dist/mac/Mon App Desktop.app
 ou
 mon-app-desktop/dist/mac/Mon App Desktop.dmg
 
-![alt text](<Capture d’écran 2026-02-25 à 19.42.03.png>)!
+![Image Todolist](images/Image1.png)
+![Image1 Todolist](images/Image2.png)
