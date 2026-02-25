@@ -38,3 +38,5 @@ Créer un .app ou un .dmg dans dist/mac/.
 mon-app-desktop/dist/mac/Mon App Desktop.app
 ou
 mon-app-desktop/dist/mac/Mon App Desktop.dmg
+
+![alt text](<Capture d’écran 2026-02-25 à 19.42.03.png>)!
