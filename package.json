@@ -1,0 +1,39 @@
+{
+  "name": "todolist-app",
+  "version": "1.0.0",
+  "description": "Application desktop de gestion de todolist avec React + Electron + SQLite",
+  "author": "Philippe Hautot",
+  "main": "main.js",
+  "scripts": {
+    "dev-renderer": "cd renderer && npm run dev",
+    "dev-electron": "cross-env NODE_ENV=development electron .",
+    "dev": "concurrently \"npm:dev-renderer\" \"npm:dev-electron\"",
+    "build-renderer": "cd renderer && npm run build",
+    "build-mac": "npm run build-renderer && electron-builder --mac",
+    "start": "electron ."
+  },
+  "build": {
+    "appId": "com.philippehautot.monapp",
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.finance"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "database.db",
+      "renderer/dist/**/*",
+      "package.json"
+    ]
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.6.2",
+    "concurrently": "^8.2.0",
+    "cross-env": "^7.0.3",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "electron": "^40.4.0",
+    "electron-builder": "^26.7.0"
+  }
+}

@@ -1,0 +1,12 @@
+.editable.vide::before {
+  content: "+ Ajoutez une nouvelle tâche";
+  display: block;        /* nécessaire pour gérer width */
+  width: 100%;           /* prendra la largeur du parent */
+  
+  color: #888;
+  pointer-events: none;
+  border-radius: 15px;
+  
+  box-sizing: border-box;
+  height: 40px;
+}
